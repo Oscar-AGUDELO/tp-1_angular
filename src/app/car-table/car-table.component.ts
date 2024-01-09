@@ -12,6 +12,7 @@ export class CarTableComponent {
 
   constructor(private carService: CarService) {
     this.cars = this.carService.getCars();
+    this.selectedCar = this.cars[0];
   }
 
   showDetails(car: any) {
